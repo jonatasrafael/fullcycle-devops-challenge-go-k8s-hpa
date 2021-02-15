@@ -1,6 +1,6 @@
 steps:
 
-- id: "Rodando testes"
+- id: "Rodando testes em src"
   name: 'gcr.io/cloud-builders/go'
   args:
   - 'test'
