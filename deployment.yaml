@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: go-hpa
 spec:
-  replicas: 3
   selector:
       matchLabels:
         app: go-hpa
@@ -13,7 +12,13 @@ spec:
         app: go-hpa
     spec:
       containers:
-      - name: c-go-hpa
+      - name: go-hpa
         image: jonatasrafael/go-hpa
         ports:
         - containerPort: 8000
+
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "100m"
