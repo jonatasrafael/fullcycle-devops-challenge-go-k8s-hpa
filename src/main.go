@@ -12,8 +12,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	for i := 0; i <= 1000000; i++ {
 		x = somaRaizQuadrada(x)
 	}
-	fmt.Fprintf(w, "Code.education Rocks!!")
-	fmt.Print("Code.education Rocks!")
+	fmt.Fprintf(w, "-Code.education Rocks!!")
+	fmt.Print("-Code.education Rocks!")
 }
 
 func somaRaizQuadrada(x float64) float64 {
