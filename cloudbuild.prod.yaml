@@ -29,7 +29,7 @@ steps:
   args:
   - '-c'
   - |
-  - sed 's#img-go-deployment#gcr.io/$PROJECT_ID/go-hpa:$SHORT_SHA#g' deployment.yaml > deployment_new.yaml;
+    sed 's#img-go-deployment#gcr.io/$PROJECT_ID/go-hpa:$SHORT_SHA#g' deployment.yaml > deployment_new.yaml;
 
 
 - id: "Deployment k8s"
